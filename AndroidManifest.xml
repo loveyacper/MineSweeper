@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="bert.young.mine"
+      android:versionCode="1"
+      android:versionName="1.0">
+<application android:icon="@drawable/icon" android:label="@string/app_name">
+      <activity android:name=".MineSweeper"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+      </activity>
+        
+      <activity android:name=".GameActivity"
+           android:label="疯狂扫雷2013  Bert Young"
+           android:screenOrientation="portrait">
+      </activity>
+      
+      <activity android:name=".About"
+          android:label="@string/about_title"
+          android:screenOrientation="portrait"
+          android:theme="@android:style/Theme.Dialog">
+      </activity>
+      
+        <activity android:name=".RankActivity"
+          android:label="排行榜"
+          android:screenOrientation="portrait">
+      </activity>
+</application>
+      
+      <uses-sdk android:minSdkVersion="8" />
+
+</manifest> 

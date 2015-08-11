@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@drawable/game_back"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  
+  <!-- 上面的计时器与笑脸-->
+   <LinearLayout android:orientation="horizontal"
+    android:id="@+id/info_layout"
+    android:gravity="top|center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        <!-- 如何显示数字倒计时  -->
+        <TextView
+            android:id="@+id/mines_cnt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:padding="10dip" 
+            android:layout_marginTop="25dip"
+            android:textColor="#84C245"
+            android:textSize="40sp"
+            android:text="025" />
+            
+        <bert.young.mine.FaceButton android:id="@+id/face_btn"
+              android:background="@null"
+              android:src="@drawable/face_selector"
+              android:scaleType="center"
+              android:layout_weight="4.0"
+              android:padding="10dip"
+              android:layout_width="wrap_content"  
+              android:layout_height="fill_parent">
+        </bert.young.mine.FaceButton>
+        
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:padding="10dip" 
+            android:layout_marginTop="25dip"
+            android:textColor="#FCBC8E"
+            android:textSize="40sp"
+            android:text="000" />
+      
+   </LinearLayout>
+   
+   <!-- 中间的主游戏区 -->
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">   
+
+        <bert.young.mine.GameView android:id="@+id/gameview"
+              android:layout_width="fill_parent"  
+              android:layout_height="fill_parent"
+              android:keepScreenOn="true"
+              android:longClickable="true"
+              android:focusable="true"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_title">关于扫雷</string>
+    <string name="about_text">" 愿您开心\n\tBert Young @ 2013"</string>
+    <string name="record_text">请留大名</string>
+    <string name="app_name">MineSweeper</string>
+    <string name="start">START</string>
+    <string name="continued">CONTINUE</string>
+    <string name="rank">RANKING</string>
+    <string name="about">ABOUT</string>
+    
+</resources>
