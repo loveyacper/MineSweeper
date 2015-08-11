@@ -38,7 +38,6 @@ class FaceButton extends ImageButton {
     
     void SetNormal(){
         setImageResource(R.drawable.face_selector);
-        //setImageResource(R.drawable.face);
     }
     
     void SetPressed() {
@@ -143,18 +142,6 @@ public class GameActivity extends Activity implements OnTouchListener {
         mTimer.start();
     }
     
-//    public void UpdateTimeText(long  passed) {
-//        String text ="000";
-//        if (passed < 10)
-//            text = "00" + passed;
-//        else if (passed < 100)
-//            text = "0" + passed;
-//        else
-//            text = "" + passed;
-//        
-//        mTimeText.setText(text);
-//    }
-    
     public void StartTimer(String saved) {
         if (mTimer != null)  mTimer.cancel();
         
@@ -219,7 +206,7 @@ public class GameActivity extends Activity implements OnTouchListener {
         
         DisplayMetrics metric = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metric);
-        final int width  = metric.widthPixels;     // ÆÁÄ»¿í¶È£¨ÏñËØ£©
+        final int width  = metric.widthPixels;
         
         int marginTotal = width % GameBoard.BOARD_WIDTH;
         if (marginTotal == 0)
@@ -316,11 +303,11 @@ public class GameActivity extends Activity implements OnTouchListener {
         }
         
         void test() {
-            this.onDoubleTap(null);//
+            this.onDoubleTap(null);
             this.onDoubleTapEvent(null);
             this.onDown(null);
-            this.onLongPress(null);//
-            this.onSingleTapConfirmed(null);//
+            this.onLongPress(null);
+            this.onSingleTapConfirmed(null);
             this.onSingleTapUp(null);
         }
     
@@ -393,7 +380,7 @@ public class GameActivity extends Activity implements OnTouchListener {
         // Pass null as the parent view because its going in the dialog layout
         builder.setView(view)
         // Add action buttons
-               .setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
+               .setPositiveButton("ÃˆÂ·Â¶Â¨", new DialogInterface.OnClickListener() {
                    @Override
                    public void onClick(DialogInterface dialog, int id) {
                        TextView text = (TextView)view.findViewById(R.id.playername);
@@ -409,7 +396,6 @@ public class GameActivity extends Activity implements OnTouchListener {
     }
     
     public void SaveRecord(String  name, long  score, int rank) {
-        //if (RankActivity.GetRank(score) < RankActivity.MAX_RANK)
-            RankActivity.Save(name, score, rank);
+        RankActivity.Save(name, score, rank);
     }
 }
