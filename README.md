@@ -4,13 +4,13 @@ Enjoy!
 
 ## Main interface
 
-![image](3.jpeg)
+<img src=3.jpeg width=420 height=887>
 
 ## Game scene
 
-![image](1.jpeg)
+<img src=1.jpeg width=420 height=887>
 
 ## Ranking
 
-![image](2.jpeg)
+<img src=2.jpeg width=420 height=887>
 
